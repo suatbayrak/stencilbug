@@ -1,0 +1,49 @@
+:host {
+  box-sizing: border-box;
+}
+
+.button {
+  border: none;
+
+  margin: 0;
+
+  font-weight: var(--si-font-weight-regular);
+  color: var(--si-font-color-primary);
+  cursor: pointer;
+
+  &.primary {
+    background-color: var(--si-color-button-primary);
+    box-shadow: var(--si-box-shadow-primary-button);
+    border-radius: var(--si-border-radius-medium);
+  }
+
+  &.secondary {
+    background-color: transparent;
+    width: auto;
+  }
+
+  &.outlined {
+    border: 1px solid var(--si-color-button-primary);
+    border-radius: var(--si-border-radius-medium);
+    background-color: transparent;
+  }
+
+  &.disabled {
+    cursor: default;
+  }
+
+  &.small {
+    height: var(--si-button-height-small);
+    font-size: var(--si-font-size-small);
+  }
+
+  &.medium {
+    height: var(--si-button-height-medium);
+    font-size: var(--si-font-size-medium);
+  }
+
+  &.large {
+    height: var(--si-button-height-large);
+    font-size: var(--si-font-size-large);
+  }
+}
